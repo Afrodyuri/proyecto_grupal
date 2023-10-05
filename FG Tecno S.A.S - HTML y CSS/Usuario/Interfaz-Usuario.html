@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;600;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/x-icon">
+
+	<title>Usuario</title>
+</head>
+
+<body>
+	<div class="menu">
+  <div class="perfil">
+    <img src="../img/Perfil.png" alt="Imagen de perfil">
+    <span>Perfil</span>
+  </div>
+  <div class="cerrar-sesion">
+    <a href="../Inicio/pagina-inicio.html">
+	<img src="../img/salida.png" alt="Imagen de cerrar sesión">
+    <span>Cerrar sesion</span>
+	</a>
+  </div>
+</div>
+<div class="icono-fgtecno">
+	<a href="../Inicio/pagina-inicio.html">
+	<img src="../img/logosolo.png" alt="icono-fgtecno">
+	</a>
+	</div>
+	<div class="rectangulo">
+		<h2><span class="titulo-usuario">Usuario</span></h2>
+	<ul>
+		<li id="opcionsm">Solicitar Mantenimiento</li>
+		<li id="opcions">Estado del Servicio</li>
+		<li id="opciong">Garantias</li>
+		<li id="opcionh">Historial</li>
+		<li id="opcionsp">Solicitud de Partes</li>
+	</ul>
+	<div id="formulariosm">
+		<h2><span class="titulo-formulario">SOLICITAR MANTENIMIENTO</span></h2>
+		<br><br>
+		<h4><span class="titulos-fmsecun">Datos Empresariales</span></h4>
+		<form id="formulario-solicitar-mantenimiento">
+			<label for="nombre">Nombre</label>
+			<input type="text" id="nombre" name="nombre">
+			<label for="telefono">Teléfono</label>
+			<input type="number" id="telefono" name="telefono">
+
+			<br><br>
+
+			<label for="correo">Correo</label>
+			<input type="text" id="correo" name="correo">
+			<label for="nit">Nit</label>
+			<input type="text" id="nit" name="nit">
+			<br><br><br>
+			<h4><span class="titulos-fmsecun">Datos de Programacion</span></h4>
+			<label for="fecha">Fecha</label>
+			<input type="date" id="fecha" name="fecha">
+			<label for="modalidad">Modalidad</label>
+			<input type="text" id="modalidad" name="modalidad">
+			<label for="tipo de problema">Tipo de Problema</label>
+			<input type="text" id="tipo de problema" name="tipo de problema">
+
+			<br><br>
+
+			<input type="submit" value="Enviar">
+		</form>
+	</div>
+	<div id="formularios">
+		<h2><span class="titulo-formulario">EN MANTENIMIENTO</span></h2>
+	</div>
+	<div id="formulariog">
+		<h2><span class="titulo-formulario">EN MANTENIMIENTO</span></h2>
+	</div>
+	<div id="formularioh">
+		<h2><span class="titulo-formulario">HISTORIAL DE SERVICIOS</span></h2>
+		<form id="formulario-historial">
+			<div id="cuadrohistorial">
+			<label for="meses">Mes</label>
+			<select name="meses" id="meses-select" onchange="mostrarordenes()">
+        <option value="01">Enero</option>
+        <option value="02">Febrero</option>
+        <option value="03">Marzo</option>
+        <option value="04">Abril</option>
+        <option value="05">Mayo</option>
+        <option value="06">Junio</option>
+        <option value="07">Julio</option>
+        <option value="08">Agosto</option>
+        <option value="09">Septiembre</option>
+        <option value="10">Octubre</option>
+        <option value="11">Noviembre</option>
+        <option value="12">Diciembre</option>
+</select>
+			<label for="modalidad">Modalidad</label>
+			<input type="text" id="modalidad" name="modalidad">
+</div>
+<h2 id="titulomes"></h2>
+<br>
+<div id="ordenes"></div>
+		</form>
+	</div>
+	<div id="formulariosp">
+		<h2><span class="titulo-formulario">SOLICITUD DE PARTES</span></h2>
+		<form id="formulario-solicitud-partes">
+			<br><br><br>
+			<label for="categoria">Categoria</label>
+			<select name="categoria" id="categoria-select">
+				<option value="01">Escritorio</option>
+				<option value="02">Portatil</option>
+				<option value="03">Accesorios</option>
+			</select>
+			<label for="componente">Componente</label>
+			<select name="componente" id="componente-select">
+				<option value="01">Ram</option>
+				<option value="02">Fuente de poder</option>
+				<option value="03">CPU</option>
+				<option value="04">Almacenamiento</option>
+				<option value="05">Placa base</option>
+				<option value="06">Conectores</option>
+				<option value="07">Ventiladores</option>
+			</select>
+
+			<br><br>
+
+			<label for="cantidad">Cantidad</label>
+			<select name="cantidad" id="cantidad-select">
+				<option value="01">1</option>
+				<option value="02">2</option>
+				<option value="03">3</option>
+			</select>
+			<label for="marca">Marca</label>
+			<input type="text" id="marca" name="marca">
+			<br><br><br>
+			<label for="observaciones">Observaciones</label>
+			<div id="cuadrobservaciones">
+			<input type="text" placeholder="Escribe aqui" id="observaciones" name="observaciones">
+			</div>
+			<br><br>
+			<input type="submit" value="Enviar">
+		</form>
+	</div>
+	</div>
+	<script src="scripts.js"></script>
+
+	<script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "9n4L4pC3pz");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script><noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript>
+</body>
+</html>

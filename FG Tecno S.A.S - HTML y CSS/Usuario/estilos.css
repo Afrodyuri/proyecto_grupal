@@ -1,0 +1,221 @@
+body {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin: 0;
+  padding: 0;
+  font-family: "Archivo";
+}
+.rectangulo {
+  position: absolute;
+  width: 1535px;
+  height: 643px;
+  left: 0px;
+  right: 0px;
+  top: 109px;
+  background: linear-gradient(180deg, #2293E6 0%, #053D66 100%);
+}
+.menu {
+  text-align: right;
+}
+.icono-fgtecno img{
+width: 182px;
+height: 69px;
+vertical-align: left;
+margin-top: -50px;
+}
+.perfil,
+.cerrar-sesion {
+  display: inline-block;
+  vertical-align: right;
+  color: #827C7C;
+  margin-top: 36px;
+  margin-left: 10px;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.perfil img,
+.cerrar-sesion img {
+  width: 25px;
+  height: 25px;
+  vertical-align: right;
+}
+
+.perfil span,
+.cerrar-sesion span {
+  display: inline-block;
+  vertical-align: right;
+  margin-left: 5px;
+}
+.titulo-usuario {
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 10px;
+}
+.titulo-formulario {
+font-family: 'Archivo';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 33px;
+margin-left: 240px;
+color: #000000;
+}
+.titulos-fmsecun {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 27px;
+color: #000000;
+}
+#ordenes {
+margin-left: 300px;
+width: 303px;
+height: 162px;
+left: 948px;
+top: 597px;
+font-family: 'Archivo';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 27px;
+color: #000000;
+}
+#cuadrohistorial{
+vertical-align: center;
+align-items: center;
+margin-left: 320px;
+width: 208px;
+height: 99px;
+left: 762px;
+top: 224px;
+background: rgba(217, 217, 217, 0.6);
+border-radius: 10px;
+padding: 20px;
+}
+#cuadrobservaciones{
+vertical-align: center;
+align-items: center;
+margin-left: 0px;
+width: 730px;
+height: 84px;
+left: 427px;
+top: 475px;
+background: rgba(217, 217, 217, 0.6);
+border-radius: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+li {
+  margin-top: 202px;
+  width: 285px;
+  height: 32px;
+  border: 1px solid black;
+  margin: 2px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #F0DF44;
+}
+li:hover {
+  background-color: #FFF8BC;
+}
+#formulariosm,
+#formularioh,
+#formulariosp,
+#formularios,
+#formulariog {
+  height: 480px;
+  width: 892px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  background-color: #F6FAFD;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border-radius: 30px;
+}
+#formulariosm h2 {
+  margin-top: 0;
+}
+
+#formularios, #formulariog, #formularioh, #formulariosp {
+  display: none;
+}
+form,
+formulario-historial,
+formulario-solicitar-mantenimiento,
+formulario-solicitud-partes {
+  display: flex;
+  flex-wrap: wrap;
+  display: inline-block;
+  align-items: center;
+  margin: 0 auto;
+}
+label {
+display: block;
+display: inline-block;
+font-family: 'Archivo';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 22px;
+margin-bottom: 10px;
+}*/
+input[type="text"],
+input[type="number"]{
+max-width: 892px;
+height: 47px;
+width: 363px;
+display: flex;
+display: inline-block;
+padding: 12px 20px;
+font-size: 17px;
+background: rgba(217, 217, 217, 0.6);
+border-radius: 10px;
+margin: 8px 0;
+margin-bottom: 20px;
+}
+#observaciones{
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding: 20px;
+}
+input[type="submit"] {
+  vertical-align: right;
+  margin-top: 40px;
+  margin-left: 380px;
+  width: 114px;
+  height: 50px;
+  left: 948px;
+  top: 597px;
+  background-color: #0F70B7;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
